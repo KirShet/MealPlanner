@@ -1,0 +1,58 @@
+/* общий стиль для дивов с классом col-10 */
+.col-10 {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* стиль для дива с классом search_padding */
+.search_padding {
+    background-color: #f0f0f0;
+}
+
+/* стиль для дива с классом results_view */
+.results_view {
+    font-family: Arial, sans-serif;
+}
+
+/* стиль для дивов с классом food_table_header_right */
+.food_table_header_right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* стиль для дивов с классом food_table_column_header */
+.food_table_column_header {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* стиль для ссылок с классом sort_nutrient_link */
+.sort_nutrient_link {
+    color: blue;
+    text-decoration: none;
+}
+
+/* стиль для дивов с классом hidden_arrow */
+.hidden_arrow {
+    display: none;
+}
+
+/* стиль для дива с классом light_icon */
+.light_icon {
+    color: #999;
+}
+
+/* стиль для элемента select с классом sort_by_nutrient */
+.sort_by_nutrient {
+    width: 100%;
+}
+
+/* стиль для кнопки с классом btn-primary */
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
