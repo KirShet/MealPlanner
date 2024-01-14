@@ -13,8 +13,7 @@ function сreatInput($name, $p, $type ="text", $class="call", $value = "", $text
             name="<?=$name?>"
             placeholder="<?=$p?>"
             value = "<?=$value?>"
-            >
-            <?if($textField != 'input')echo $value.'</'.$textField.'>';?>
+            ><?if($textField != 'input')echo $value.'</'.$textField.'>';?>
             <?=(isset($_SESSION['errors'][$name])) ? "<br><span>{$_SESSION['errors'][$name]}</span>" : "" ?>
             <?unset($_SESSION['errors'][$name]);?>
     <?php
