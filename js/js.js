@@ -57,32 +57,3 @@ window.addEventListener("scroll", function() {
 // var xhr = new XMLHttpRequest();
 // xhr.open("GET", `../index.php?height=${height}`, true);
 // xhr.send();
-document.addEventListener('DOMContentLoaded', function(){
-  document.addEventListener('submit', function(e) {
-    if (e.target.classList.contains('heart_form')) {
-      e.preventDefault(); // предотвращаем отправку формы по умолчанию
-      // let form = document.getElementById('heart_form');
-      formSend(e);
-      // console.log(form);
-    }
-  });
-
-  async function formSend(e) {
-    console.log(e.srcElement);
-    let form = e.srcElement;
-    let formData = new FormData(form);
-    let response = await fetch('/action/send_menu1.php',{
-      method: 'POST',
-      body: formData
-    });
-    if(response.ok){
-      let result = await response.json();
-      console.log(result);
-      location.reload();
-    }
-    // let formData = new FormData()
-  }
-  // setTimeout(function() {
-  //   location.reload();
-  // }, 3000);
-});

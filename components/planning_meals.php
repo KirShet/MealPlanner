@@ -95,7 +95,7 @@
                             </div>
                         </div>
                         <div class="techna">
-                            <form id="heart_form" class = "heart_form" action = "#heart_form">
+                            <form <?= action('send_menu')?>>
                             <input type="submit" name="heart" class="heart" value="">
                             <input type="hidden" name="value" value="<?=$value?>">
                             </form>

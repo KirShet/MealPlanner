@@ -51,7 +51,7 @@ function href($url) {
     return "href = '$url' ";
 }
 
-function action($url='#', $method="POST"){
+function action($url, $method="POST"){
     global $config;
     $url = ($config->root == '') ? "/action/$url.php" : "$config->root/action/$url.php";
     return " action = '$url' method = '$method' ";
@@ -114,21 +114,21 @@ function redirect($url  = false) {
 function emptyValues($keyValue, $values) {
     // есть ли пустые значения в массиве $values, который соответствует некоторым ключам из массива $keyValue
     // global $config;
-    // echo "<br> values ";
-    // print_r($values);
+    echo"<br> values ";
+    print_r($values);
 
     $arrValues = [];
     foreach ($keyValue as $key => $value) {
-        // echo "ключ $key => $value<br>";
+        echo "ключ $key => $value<br>";
         // 0 => login
         // 1 => name
         if(empty($values[$value])) {
             //  true, если значение не существует
             $_SESSION['errors'][$value] = 'Поле обязательно к заполнению';
-            // echo "значения не сущ $value => $values[$value]<br>";
+            echo "значения не сущ $value => $values[$value]<br>";
         }else{
             // $_SESSION['values'][$value] = $values[$value];
-            // echo "существует $value => $values[$value]<br>";
+            echo "существует $value => $values[$value]<br>";
             // login => 1
             // name => ff
         }
@@ -243,8 +243,8 @@ function PFC($post_data, &$fill_array) {
 
     $fill_array['PFC'] =zero($prot) . ':' . zero($fats) . ':' . zero($carb);
     $fill_array['call_per_100_grams'] = $call;
-    // echo "тут";
-    // print_r($fill_array);
+    echo "тут";
+    print_r($fill_array);
 }
 function delete($table, $id){
     global $mysqli;
