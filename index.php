@@ -4,7 +4,7 @@ include 'components/core.php';
 
 <?php 
     loadComponent('header');
-
+// include 'components/header.php';
     // $meal_time = mysqli_query($mysqli, "SELECT * FROM `meal_time`");
     // $meal_time_results = mysqli_fetch_all($meal_time, MYSQLI_ASSOC);
     // // кнопка обновления
