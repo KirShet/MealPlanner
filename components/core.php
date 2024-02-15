@@ -42,13 +42,13 @@ function loadComponent($file, $number = false)
         // }
     }
 }
-function href($url)
+function href($url, $extension ='php')
 {
     global $config;
     // if?config->root=="":
     // print_r($config);
     // echo $url;
-    $url = ($config->root) ? "$config->root/$url.php" : "/$url.php";
+    $url = ($config->root) ? "$config->root/$url.$extension" : "/$url.$extension";
     // 
     // свойство не пусто, то есть истинно, то переменная $url получит значение “/url.php”, то есть адрес страницы без подпапки. Если это свойство пусто, то есть ложно, то переменная $url получит значение “$config->root/$url.php”, то есть адрес страницы с подпапкой
     return "href = '$url' ";
