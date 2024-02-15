@@ -1,8 +1,10 @@
 <?php
 session_start();
-$config = (object)[
+class Core
+{
+public $config = (object)[
     "root" => "/MealPlanner",
-    "siteName" => "Мой сайт",
+    "siteName" => "Meal Planner",
 
     "dbHost" => "",
     "dbLogin" => "",
@@ -10,6 +12,8 @@ $config = (object)[
     "dbName" => "",
     "dbPort" => "",
 ];
+}
+
 $mysqli =  $dbh = new PDO("mysql:dbname=meal_planner;host=localhost:3306", "root", "");
 // unset($_SESSION);
 $root = $_SERVER['CONTEXT_DOCUMENT_ROOT'] . $config->root;
