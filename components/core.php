@@ -42,7 +42,7 @@ function loadComponent($file, $number = false)
         // }
     }
 }
-function href($url, $extension ='php')
+function href($url, $extension ='php', $attribute='href')
 {
     global $config;
     // if?config->root=="":
@@ -51,7 +51,7 @@ function href($url, $extension ='php')
     $url = ($config->root) ? "$config->root/$url.$extension" : "/$url.$extension";
     // 
     // свойство не пусто, то есть истинно, то переменная $url получит значение “/url.php”, то есть адрес страницы без подпапки. Если это свойство пусто, то есть ложно, то переменная $url получит значение “$config->root/$url.php”, то есть адрес страницы с подпапкой
-    return "href = '$url' ";
+    return "$attribute = '$url' ";
 }
 
 function action($url = '#', $method = "POST")
