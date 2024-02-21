@@ -43,7 +43,7 @@
                                 <p><?= $eating['name'];?></p>
                             </div>
                             <div class="dish_img">
-                                <img src="/img/<?= $eating['img'];?>" alt="" srcset="" style="">
+                                <img <?= href('img/'.$eating['img'], '', 'src') ?> alt="" srcset="" style="">
                             </div>
                         </div>
                         <div class="techna">
@@ -91,7 +91,7 @@
                                 <p><?= $eating['name'];?></p>
                             </div>
                             <div class="dish_img">
-                                <img src="/img/<?= $eating['img'];?>" alt="" srcset="" style="">
+                                <img <?= href('img/'.$eating['img'], '', 'src') ?> alt="" srcset="" style="">
                             </div>
                         </div>
                         <div class="techna">
