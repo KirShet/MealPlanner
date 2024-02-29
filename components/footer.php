@@ -37,7 +37,7 @@
             <div class="sup"><p>©2023 Kirshet Media Group.</p></div>
         </footer>
     </main>
-    <script <?= href('js/js', 'js', 'src') ?>></script>
+    <script <?= href('js/react', 'js', 'src') ?>></script>
     <script>
 function submitForm() {
   var form = document.getElementById('myForm');

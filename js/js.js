@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function(){
     if(response.ok){
       let result = await response.json();
       console.log(result);
-      location.reload();
+      // location.reload();
     }
     // let formData = new FormData()
   }
