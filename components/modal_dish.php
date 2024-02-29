@@ -5,7 +5,7 @@
                                 <p><?= $eating['name'];?></p>
                             </div>
                             <div class="dish_img">
-                                <img src="/img/<?= $eating['img'];?>" alt="" srcset="" style="">
+                                <img <?= href('img1/'.$eating['img'], '', 'src') ?> alt="" srcset="" style="">
                             </div>
                         </div>
                         <div class="techna">

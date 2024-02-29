@@ -14,7 +14,7 @@
     <header>
         <nav>
             <div class="logo_div">
-                <img src="/img/Безымянный-2.png" alt="">
+                <img <?= href('img/Безымянный-2', 'png', 'src') ?> alt="">
             </div>
             <div class="links">
                 <ul>
@@ -69,6 +69,6 @@
                     <option value="4">xxx</option>
                 </select>
             </div>
-            <label class="hui" for="calcul"><img src="/img/calc.png" alt="" srcset=""></label>
+            <label class="hui" for="calcul"><img <?= href('img/calc', 'png', 'src') ?> alt="" srcset=""></label>
         </div>
     </header>
