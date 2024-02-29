@@ -10,7 +10,7 @@ $config = (object)[
     "dbName" => "",
     "dbPort" => "",
 ];
-$mysqli =  $dbh = new PDO("mysql:dbname=meal_planner;host=localhost:3306", "root", "");
+$mysqli =  $dbh = new PDO("mysql:dbname=meal_planner;host=localhost:3307", "root", "root");
 // unset($_SESSION);
 $root = $_SERVER['CONTEXT_DOCUMENT_ROOT'] . $config->root;
 // if($mysqli->error) die("Error: ". $mysqli->connect_error)

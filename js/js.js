@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function(){
     console.log(e.srcElement);
     let form = e.srcElement;
     let formData = new FormData(form);
-    let response = await fetch('/action/send_menu1.php',{
+    let response = await fetch('action/send_menu1.php',{
       method: 'POST',
       body: formData
     });
