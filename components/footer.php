@@ -17,7 +17,7 @@
                 </div>
             </div>
             <div class="centimg">
-                <img src="/001521922.jpg" alt  sizes="607px" style="display:block;width:100%;height:auto;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto" loading="lazy">
+                <img src="img/background-image.jpeg" alt  sizes="607px" style="display:block;width:100%;height:auto;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto" loading="lazy">
             </div>
             <div class="side">
                 <div class="subs">
@@ -37,6 +37,7 @@
             <div class="sup"><p>©2023 Kirshet Media Group.</p></div>
         </footer>
     </main>
+    <script <?= href('js/js', 'js', 'src') ?>></script>
     <script <?= href('js/react', 'js', 'src') ?>></script>
     <script>
 function submitForm() {
